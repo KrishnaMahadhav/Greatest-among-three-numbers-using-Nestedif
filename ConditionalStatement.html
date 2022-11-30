@@ -1,0 +1,54 @@
+<html> <body>
+    <center><h2>Greatest among three numbers using Nestedif </h2></center>
+    <label for="fname">Value of A:</label>
+    <input type="text" id="fname" name="fname" size="50"><br><br>
+    <label for="fname">Value of B:</label>
+    <input type="text" id="fname1" name="fname1" size="50"><br><br>
+    <label for="fname">Value of C:</label>
+    <input type="text" id="fname2" name="fname2" size="50"><br><br>
+    <input type="button" value="Greater Value" onclick="ife()">
+    <input type="button" value="Clear" onclick="clear1()">
+    <script>
+    function ife()
+    {
+    let a=parseInt(fname.value);
+    let b=parseInt(fname1.value);
+    let c=parseInt(fname2.value);
+    let result;
+    if(!a || !b || !c)
+    {
+    alert("value is missing retry: Enter the A, Band C values")
+    }
+    else
+    {
+    if((a>b)&&(a>c))
+    {
+    11
+    result=" The Value "+ a +" is greater";
+    }
+    else
+    {
+    if(b>c)
+    {
+    result="The Value "+ b +" is greater";
+    }
+    else
+    {
+    result=" The Value "+ c +" is greater";
+    }
+    }
+    document.getElementById("printvalue").innerHTML= "Resultant value : "+result;
+    }
+    }
+    function clear1()
+    {
+    fname.value="";
+    fname1.value="";
+    fname2.value="";
+    }
+    </script>
+    <br>
+    <br>
+    <h3> OUTPUT </h3> <p id="printvalue"> </p>
+    </body> </html>
+    
